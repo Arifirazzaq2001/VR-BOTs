@@ -75,6 +75,7 @@ const jam = moment.tz('Asia/Jakarta').format('HH:mm')
 fromMe = false
 off = true
 charging = '-'
+batrai = '-'
 antidel = false
 prefix = ''
 reason = ''
