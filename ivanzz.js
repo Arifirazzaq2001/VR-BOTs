@@ -74,6 +74,7 @@ const jam = moment.tz('Asia/Jakarta').format('HH:mm')
 // Multi prefix ya
 fromMe = false
 off = true
+charging = '-'
 antidel = false
 prefix = ''
 reason = ''
