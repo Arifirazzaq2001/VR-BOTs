@@ -695,14 +695,14 @@ fs.unlinkSync('./database/sampah/' + yy + '.mp3')
 });
 break
 case 'play': case 'ytplay': case 'ytmp3':
-let ytsnya = await yts(q);
+ ytsnya = await yts(q);
 res = ytsnya.all;
 anu = await vanz.yta(res[0].url)
 bup = await getBuffer(anu.audio)
 vanz.sendMessage(from, bup, auido, {mimetype: 'audio/mp4', quoted:vnz})
 break
 case 'video': case 'playmp4': 
-let ytsnya = await yts(q);
+ ytsnya = await yts(q);
 res = ytsnya.all;
 anu = await vanz.ytv(res[0].url)
 bup = await getBuffer(anu.result.dl_link)
