@@ -699,14 +699,14 @@ case 'play': case 'ytplay': case 'ytmp3':
 res = ytsnya.all;
 anu = await vanz.yta(res[0].url)
 bup = await getBuffer(anu.audio)
-vanz.sendMessage(from, bup, audio, {mimetype: 'audio/mp4', quoted:vnz})
+Vanz.sendMessage(from, bup, audio, {mimetype: 'audio/mp4', quoted:vnz})
 break
 case 'video': case 'playmp4': 
  ytsnya = await yts(q);
 res = ytsnya.all;
 anu = await vanz.ytv(res[0].url)
 bup = await getBuffer(anu.dl_link)
-vanz.sendMessage(from, bup, video, {quoted:vnz})
+Vanz.sendMessage(from, bup, video, {quoted:vnz})
 break
 case 'getmusic': case 'getytmusic':
 namLagu = 'Y'
@@ -1069,7 +1069,7 @@ sendFile(fb.download.sd, video)
 })
 break
 case 'tt': case 'tiktok': 
-ttvideo = await ttvideo(q)
+ttvideo = await vanz.ttvideo(q)
 sendFile(ttvideo.result.nowm, video)
 break
 case 'ttmp3': case 'tiktokmusic':
