@@ -1,1 +1,1 @@
-worker: node ivanzz.js
+worker: npm start
